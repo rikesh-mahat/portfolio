@@ -1,7 +1,7 @@
 // images import
 import project1 from "/project1.png";
 import project2 from "/project2.png";
-
+import project3 from "/project3.png"
 // swiper library import
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -81,11 +81,11 @@ const Projects = () => {
           <SwiperSlide className="project-slider">
             <div>
 
-            <img src={project2} alt="food-website" className="tech-img" />
+            <img src={project3} alt="food-website" className="tech-img" />
             </div>
             <div className="link-container">
-            <a href="" className="btn">Live Demo <FaArrowCircleRight className="-rotate-45"/></a>
-              <a href="" className="btn">Github <FaGithub className=""/></a>
+            <a href="https://portfolio-eight-smoky-98.vercel.app/" className="btn">Live Demo <FaArrowCircleRight className="-rotate-45"/></a>
+              <a href="https://github.com/rikesh-mahat/portfolio" className="btn">Github <FaGithub className=""/></a>
             </div>
           </SwiperSlide>
 
