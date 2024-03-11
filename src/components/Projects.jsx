@@ -73,8 +73,8 @@ const Projects = () => {
             <img src={project2} alt="food-website" className="tech-img" />
             </div>
             <div className="link-container">
-            <a href="" className="btn">Live Demo <FaArrowCircleRight className="-rotate-45"/></a>
-              <a href="" className="btn">Github <FaGithub className=""/></a>
+            <a href="https://rikesh-mahat.github.io/foodwebsite/" className="btn">Live Demo <FaArrowCircleRight className="-rotate-45"/></a>
+              <a href="https://github.com/rikesh-mahat/foodwebsite/settings" className="btn">Github <FaGithub className=""/></a>
             </div>
           </SwiperSlide>
 
