@@ -62,8 +62,8 @@ const Projects = () => {
               />
             </div>
             <div className="link-container">
-              <a href="" className="btn">Live Demo <FaArrowCircleRight className="-rotate-45"/></a>
-              <a href="" className="btn">Github <FaGithub className=""/></a>
+              <a href="https://react-tailwind-neon.vercel.app/" className="btn">Live Demo <FaArrowCircleRight className="-rotate-45"/></a>
+              <a href="https://github.com/rikesh-mahat/react-tailwind" className="btn">Github <FaGithub className=""/></a>
             </div>
           </SwiperSlide>
 
