@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+        @apply font-[Raleway];
+    }
+    li {
+        @apply px-2 cursor-pointer;
+        
+    }
+}
+
+@layer components{
+  .section{
+    @apply w-full h-screen bg-[#0a132f] text-gray-300;
+  }
+  .all-padding{
+    @apply px-8 md:px-12;
+  }
+  .image-container{
+    @apply  size-20 md:size-32 bg-white/5 rounded-lg;
+  }
+  .tech-img{
+    @apply w-full h-full object-contain;
+  }
+
+  .project-slider{
+    @apply size-full md:size-1/2 bg-white/10 flex flex-col items-start gap-4 rounded-xl;
+  }
+
+  .link-container{
+    @apply flex flex-row w-full h-full gap-4 px-2 py-6;
+  }
+
+  .btn{
+    @apply px-2 py-2 bg-white/25 rounded-md text-xs flex flex-row items-center gap-2 hover:bg-white/55;
+  }
+
+  .form-input{
+    @apply px-4 py-2 rounded-md outline-blue-500 bg-white/55 text-black font-semibold placeholder:text-black/55;
+  }
+}
