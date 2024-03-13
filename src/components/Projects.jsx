@@ -37,7 +37,7 @@ const Projects = () => {
           slidesPerView={"auto"}
           loop={true}
           autoplay={{
-            delay: 5000,
+            delay: 10000,
             disableOnInteraction: false,
           }}
           coverflowEffect={{
@@ -49,7 +49,7 @@ const Projects = () => {
           }}
           pagination={true}
           modules={[Autoplay, EffectCoverflow, Pagination]}
-          className="mySwiper w-[80%] pt-10 -z-0"
+          className="mySwiper w-[80%] pt-10"
           data-aos='fade-right'
           data-aos-duration='1000'
         >

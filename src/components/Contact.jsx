@@ -18,25 +18,25 @@ const Contact = () => {
             <h1 className="border-b-[3px] border-pink-600 inline-block text-4xl font-bold">Contact Me</h1>
             <p className="flex flex-row items-center gap-2 flex-wrap">// <span className="italic text-md">Submit form or email me </span> : <MdEmail className="inline-blocks" /> <span className="text-pink-600 underline">rikeshmahat.96@gmail.com</span></p>
         </div>
-        <form action="https://getform.io/f/jbwllmla" method="POST" className=" w-full md:w-[35%] -z-0" data-aos='fade-up' data-aos-duration='1000'>
+        <form action="https://getform.io/f/jbwllmla" method="POST" className=" w-full md:w-[35%]" data-aos='fade-up' data-aos-duration='1000'>
             
                 <div className="flex flex-col gap-4">
                 
                     
                     <div className="flex flex-col gap-2 w-full">
 
-                        <label htmlFor='lastName'>Full Name</label>
-                        <input type="text" placeholder="John Doe" className="form-input" name="fullName"/>
+                        <label htmlFor='fullName'>Full Name</label>
+                        <input type="text" placeholder="John Doe" id="fullName" className="form-input" name="fullName" required/>
                     </div>
 
                     <div className="flex flex-col gap-2 w-full ">
-                    <label htmlFor="">Email</label>
-                    <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" className="form-input"/>
+                    <label htmlFor="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" className="form-input" autoComplete="true" required/>
                     </div>
 
                     <div className="flex flex-col gap-2 w-full">
-                    <label htmlFor="">Email</label>
-                    <textarea type="text" name="message" id="email" placeholder="leave a message..." className="form-input"></textarea>
+                    <label htmlFor="message">Email</label>
+                    <textarea type="text" name="message" id="message" placeholder="leave a message..." className="form-input" required></textarea>
                     </div>
                 </div>
                 <div className="">

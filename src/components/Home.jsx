@@ -18,7 +18,7 @@ const Home = () => {
     <main name='home' className="section pt-24 -z-20" >
        
         {/* container */}
-        <div className="all-padding flex flex-row flex-wrap-reverse gap-4 md:gap-28 h-full">
+        <div className="all-padding flex flex-row flex-wrap-reverse gap-4 md:gap-60 h-full">
                 <div className="flex flex-col justify-center gap-2 mb-16" data-aos="fade-right" data-aos-duration="1300">
 
                   <p className="text-pink-600 text-xl">Hi my name is </p>
@@ -42,7 +42,7 @@ const Home = () => {
 
                 {/* work  */}
               <div className="flex flex-col justify-center " data-aos="fade-up" data-aos-duration="1000">
-                <div className="rounded-full  border-2 border-blue-900 overflow-hidden">
+                <div className="rounded-full  border-2 border-blue-500 overflow-hidden">
                   <img src={profile} alt="rikesh mahat profile picture" className="object-cover"/>
                 </div>
                 </div>

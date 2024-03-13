@@ -24,4 +24,6 @@
 }
 
 
-
+.swiper{
+  z-index: 0;
+}

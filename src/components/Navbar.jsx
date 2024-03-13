@@ -24,10 +24,10 @@ const Navbar = () => {
 
     
   return (
-    <header className="fixed z-9999 top-0 left-0 w-screen h-20 flex justify-between items-center px-8 md:px-16 bg-[#0a132f] text-gray-300">
+    <header className="fixed top-0 left-0 w-screen h-20 flex justify-end md:justify-center items-center px-8 md:px-16 bg-[#0a132f] text-gray-300">
 
         {/* logo section*/}
-        <section className=''>
+        <section className='absolute left-8  md:left-12'>
             <h1 className="text-md"><span className="bg-white/25 px-3 py-2 font-bold">R</span> <span className="font-bold">M</span></h1>
         </section>
 
@@ -84,12 +84,12 @@ const Navbar = () => {
 
         {/* hamburger section */}
         <section className="">
-            <GiHamburgerMenu className="size-6 md:hidden" onClick={handleMenuActive}/>
+            <GiHamburgerMenu className="size-6 md:hidden " onClick={handleMenuActive}/>
         </section>
 
         {/* mobile navigation section */}
         <aside
-        className={`md:hidden fixed top-0 backdrop-blur-lg right-0 w-full h-screen  bg-[#0a132f] text-gray-300 ${menuActive ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-500 ease-in-out`}>
+        className={`md:hidden fixed z-9999 top-0 backdrop-blur-lg right-0 w-full h-screen  bg-[#0a132f] text-gray-300 ${menuActive ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-500 ease-in-out`}>
             <ul className="h-full flex flex-col items-center justify-center gap-8  text-3xl" data-aos='fade-left' >
                 <li>
                     <Link 
@@ -143,7 +143,7 @@ const Navbar = () => {
              
 
 
-                <div className="absolute bottom-10 flex flex-row gap-4">
+                <div className="absolute bottom-20 flex flex-row gap-4 items-center">
 
                     <a href="https://github.com/rikesh-mahat" target="_blank">
 
@@ -163,13 +163,14 @@ const Navbar = () => {
                     <a href="https://www.instagram.com/rikesh_mahat/" target="_blank">
             <FaInstagram className="size-7 hover:scale-150 hover:text-blue-500 cursor-pointer"/>
           
-        </a>
-
-                </div>
-
-                <div className="absolute right-5 bottom-8">
+        </a>    
+        <div className="absolute -right-28">
                 <p className="text-[20px] bg-white/5 rounded-md px-4 py-1" onClick={handleMenuActive}>Close</p>
                 </div>
+
+                </div>
+
+                
                 
             </ul>
 
